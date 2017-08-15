@@ -1,6 +1,7 @@
 # Introduction to React Router
 
 ## Objectives
+Nevermind
 
 1. Describe __React Router's__ approach to client-side routing
 2. Explain how React Router allows building a route tree as a component
@@ -81,8 +82,8 @@ ReactDOM.render((
 
 Step 1: In Step 1 above, there are two components that we are importing from __React Router__. We use them in turn.  
 
-Step 2: The __Router__ (aka BrowserRouter) component is the base for our apps routing. It is where we declare how __React Router__ will be used. For example, notice that nested inside the __Router__ component we use the __Route__ component. The __Route__ component is in charge of saying, when the url matches this specified path, render this specified component. We are using the `render` prop in the `Route` component, but we could have used `component={Home}` instead. With `render` we are just invoking a function call to render `<div><h1>Home</h1></div>`.
-
+	Step 2: The __Router__ (aka BrowserRouter) component is the base for our apps routing. It is where we declare how __React Router__ will be used. For example, notice that nested inside the __Router__ component we use the __Route__ component. The __Route__ component is in charge of saying, when the url matches this specified path, render this specified component. We are using the `component` prop in the `Route` component, but there are other render methods we can use, such as `render` and `children` and you can read about the difference in the react-router-dom docs. Most of the time, though, you will juse use `component`.
+	
 Let's try it. Run npm start to boot up the application and then point your url to localhost:3000. What you'll notice is that when you type in the url; it will render a `<div>Home</div>`.
 
 #### Adding Additional Routes
@@ -368,3 +369,5 @@ Load up the browser again and you should see beautiful blue navlinks that load u
 
 ## Resources
 * [React Router Tutorial](https://reacttraining.com/react-router/web/example/basic)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-components-as-routes'>React Components As Routes</a> on Learn.co and start learning to code for free.</p>
